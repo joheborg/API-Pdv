@@ -1,9 +1,10 @@
 using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using API_Pdv.Interfaces.Repositories;
+using API_Pdv.Entities;
 
-public class Produto : IProdutoUseCase
+namespace API_Pdv.Entities;
+public class Produto
 {
     public int Id { get; set; }
 
@@ -11,7 +12,6 @@ public class Produto : IProdutoUseCase
     public int EmpresaId { get; set; }
 
     [ForeignKey(nameof(EmpresaId))]
-    public Empresa Empresa { get; set; } = null!;
 
     // Dados gerais
     [StringLength(50)]
@@ -19,6 +19,15 @@ public class Produto : IProdutoUseCase
 
     [StringLength(255)]
     public string? ImagemUrl { get; set; }
+
+    // Campos de imagem
+    public string? ImagemBase64 { get; set; }
+    
+    [StringLength(255)]
+    public string? ImagemNome { get; set; }
+    
+    [StringLength(100)]
+    public string? ImagemMimeType { get; set; }
 
     [Required, StringLength(100)]
     public string Nome { get; set; } = null!;
@@ -50,11 +59,12 @@ public class Produto : IProdutoUseCase
 
     [StringLength(50)]
     public string? CodigoBarras { get; set; }
+    public bool Situacao { get; set; }
 
     [StringLength(10)]
-    public string? UnidadeVenda { get; set; }
+    public string? UnidadeVenda { get; set; } = "UN";
 
-    // Dados fiscais
+    // Dados fiscais básicos
     [StringLength(20)]
     public string? NCM { get; set; }
 
@@ -67,9 +77,75 @@ public class Produto : IProdutoUseCase
     [StringLength(20)]
     public string? CSOSN_CST { get; set; }
 
-    public byte? OrigemProduto { get; set; } // pode ser enum depois
+    public byte? OrigemProduto { get; set; }
+
+    // Dados Fiscais ICMS
+    [StringLength(3)]
+    public string? CstIcms { get; set; } = "00";
+
+    [Column(TypeName = "decimal(10,2)")]
+    public decimal? BaseCalculoIcms { get; set; } = 0.00m;
+
+    [Column(TypeName = "decimal(5,2)")]
+    public decimal? AliquotaIcms { get; set; } = 0.00m;
+
+    [Column(TypeName = "decimal(10,2)")]
+    public decimal? ValorIcms { get; set; } = 0.00m;
+
+    // Dados Fiscais IPI
+    [StringLength(3)]
+    public string? CstIpi { get; set; } = "50";
+
+    [Column(TypeName = "decimal(10,2)")]
+    public decimal? BaseCalculoIpi { get; set; } = 0.00m;
+
+    [Column(TypeName = "decimal(5,2)")]
+    public decimal? AliquotaIpi { get; set; } = 0.00m;
+
+    [Column(TypeName = "decimal(10,2)")]
+    public decimal? ValorIpi { get; set; } = 0.00m;
+
+    // Dados Fiscais PIS
+    [StringLength(3)]
+    public string? CstPis { get; set; } = "01";
+
+    [Column(TypeName = "decimal(10,2)")]
+    public decimal? BaseCalculoPis { get; set; } = 0.00m;
+
+    [Column(TypeName = "decimal(5,2)")]
+    public decimal? AliquotaPis { get; set; } = 1.65m;
+
+    [Column(TypeName = "decimal(10,2)")]
+    public decimal? ValorPis { get; set; } = 0.00m;
+
+    // Dados Fiscais COFINS
+    [StringLength(3)]
+    public string? CstCofins { get; set; } = "01";
+
+    [Column(TypeName = "decimal(10,2)")]
+    public decimal? BaseCalculoCofins { get; set; } = 0.00m;
+
+    [Column(TypeName = "decimal(5,2)")]
+    public decimal? AliquotaCofins { get; set; } = 7.60m;
+
+    [Column(TypeName = "decimal(10,2)")]
+    public decimal? ValorCofins { get; set; } = 0.00m;
+
+    // Códigos adicionais
+    [StringLength(14)]
+    public string? CodigoEan { get; set; }
+
+    public string? InformacoesAdicionais { get; set; }
 
     // Controle de datas
     public DateTime CreatedAt { get; set; } = DateTime.Now;
     public DateTime UpdatedAt { get; set; } = DateTime.Now;
+
+    // Controle de Estoque
+    public int EstoqueAtual { get; set; } = 0;
+    public int EstoqueMinimo { get; set; } = 0;
+    public int EstoqueMaximo { get; set; } = 0;
+    public DateTime? UltimaMovimentacao { get; set; }
+    public string? LocalizacaoEstoque { get; set; }
+    public bool ControlaEstoque { get; set; } = true;
 }

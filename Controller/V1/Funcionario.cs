@@ -3,31 +3,37 @@ using Microsoft.AspNetCore.Mvc;
 namespace WebPdv.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("api/v1/[controller]")]
     public class FuncionarioController : ControllerBase
     {
         [HttpGet]
-        public IActionResult Get()
+        public IActionResult GetAll()
         {
-            return Ok("Olá Mundo da Controller");
+            return Ok("Lista todos os funcionários");
         }
         
-        [HttpGet]
+        [HttpGet("{id}")]
         public IActionResult GetById(int id)
         {
-            return Ok("Olá Mundo da Controller");
+            return Ok($"Funcionário com ID {id}");
         }
         
         [HttpPost]
-        public IActionResult Post()
+        public IActionResult Create()
         {
-            return Ok("Olá Mundo da Controller");
+            return Ok("Criar funcionário");
         }
         
-        [HttpDelete]
+        [HttpPut("{id}")]
+        public IActionResult Update(int id)
+        {
+            return Ok($"Atualizar funcionário {id}");
+        }
+        
+        [HttpDelete("{id}")]
         public IActionResult Delete(int id)
         {
-            return Ok("Olá Mundo da Controller");
+            return Ok($"Deletar funcionário {id}");
         }
     }
 }

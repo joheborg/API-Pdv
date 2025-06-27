@@ -1,9 +1,12 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using API_Pdv.Interfaces.Repositories;
+using ProdutoEntities = API_Pdv.Entities.Produto;
 
-public class Empresa : IEmpresaUseCase
+namespace API_Pdv.Entities;
+
+
+public class Empresa
 {
     public int Id { get; set; }
 
@@ -22,11 +25,17 @@ public class Empresa : IEmpresaUseCase
     [StringLength(5)]
     public string? CRT { get; set; }
 
+    // Logo da empresa
+    public string? LogoBase64 { get; set; }
+    
+    [StringLength(255)]
+    public string? LogoNome { get; set; }
+    
+    [StringLength(100)]
+    public string? LogoMimeType { get; set; }
+
     // Endereço como objeto complexo
     public Endereco Endereco { get; set; } = new Endereco();
-
-    // Navegação: Uma empresa tem muitos produtos
-    public ICollection<Produto> Produtos { get; set; } = new List<Produto>();
 
     // Datas
     public DateTime CreatedAt { get; set; } = DateTime.Now;
@@ -42,6 +51,9 @@ public class Endereco
     public string? Numero { get; set; }
 
     [StringLength(100)]
+    public string? Complemento { get; set; }
+
+    [StringLength(100)]
     public string? Bairro { get; set; }
 
     [StringLength(10)]
@@ -55,4 +67,10 @@ public class Endereco
 
     [StringLength(10)]
     public string? CEP { get; set; }
+
+    [StringLength(10)]
+    public string? CodigoPais { get; set; } = "1058";
+
+    [StringLength(50)]
+    public string? NomePais { get; set; } = "Brasil";
 }

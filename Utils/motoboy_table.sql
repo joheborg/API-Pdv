@@ -1,0 +1,14 @@
+CREATE TABLE motoboy (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    empresa_id INT NOT NULL,
+    nome VARCHAR(100) NOT NULL,
+    documento VARCHAR(20) NOT NULL,
+    telefone VARCHAR(20) NOT NULL,
+    veiculo VARCHAR(50) NOT NULL,
+    placa VARCHAR(10) NOT NULL,
+    status VARCHAR(20) NOT NULL DEFAULT 'ativo',
+    observacao VARCHAR(255),
+    created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    updated_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    FOREIGN KEY (empresa_id) REFERENCES empresa(id)
+); 

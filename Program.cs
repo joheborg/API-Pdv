@@ -10,15 +10,13 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 
 // Database
-var connectionString = builder.Configuration.GetConnectionString("ConnectionStrings");
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
 
 // Dependency Injection
 builder.Services.AddScoped<IProduto, API_Pdv.Infraestructure.Repositories.Produto>();
-builder.Services.AddScoped<IProdutoUseCase, Produto>();
 builder.Services.AddScoped<IEmpresa, API_Pdv.Infraestructure.Repositories.Empresa>();
-builder.Services.AddScoped<IEmpresaUseCase, Empresa>();
 
 // Adiciona Swagger
 builder.Services.AddEndpointsApiExplorer();

@@ -35,3 +35,8 @@ C:\Users\joheb\RiderProjects\API-Pdv\API-Pdv\bin\Debug\net9.0\Microsoft.EntityFr
 C:\Users\joheb\RiderProjects\API-Pdv\API-Pdv\bin\Debug\net9.0\MySqlConnector.dll
 C:\Users\joheb\RiderProjects\API-Pdv\API-Pdv\bin\Debug\net9.0\Pomelo.EntityFrameworkCore.MySql.dll
 C:\Users\joheb\RiderProjects\API-Pdv\API-Pdv\obj\Debug\net9.0\API-Pdv.sourcelink.json
+C:\Users\joheb\RiderProjects\API-Pdv\API-Pdv\obj\Debug\net9.0\rpswa.dswa.cache.json
+C:\Users\joheb\RiderProjects\API-Pdv\API-Pdv\obj\Debug\net9.0\rjimswa.dswa.cache.json
+C:\Users\joheb\RiderProjects\API-Pdv\API-Pdv\obj\Debug\net9.0\rjsmrazor.dswa.cache.json
+C:\Users\joheb\RiderProjects\API-Pdv\API-Pdv\obj\Debug\net9.0\rjsmcshtml.dswa.cache.json
+C:\Users\joheb\RiderProjects\API-Pdv\API-Pdv\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
