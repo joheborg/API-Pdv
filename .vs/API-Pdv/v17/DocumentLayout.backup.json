@@ -3,22 +3,6 @@
   "WorkspaceRootPath": "C:\\Users\\joheb\\RiderProjects\\API-Pdv\\API-Pdv\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F098DA70-50E1-8CD3-29BD-AF7D52BF9981}|API-Pdv.csproj|c:\\users\\joheb\\riderprojects\\api-pdv\\api-pdv\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F098DA70-50E1-8CD3-29BD-AF7D52BF9981}|API-Pdv.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F098DA70-50E1-8CD3-29BD-AF7D52BF9981}|API-Pdv.csproj|c:\\users\\joheb\\riderprojects\\api-pdv\\api-pdv\\api-pdv.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
-      "RelativeMoniker": "D:0:0:{F098DA70-50E1-8CD3-29BD-AF7D52BF9981}|API-Pdv.csproj|solutionrelative:api-pdv.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F098DA70-50E1-8CD3-29BD-AF7D52BF9981}|API-Pdv.csproj|c:\\users\\joheb\\riderprojects\\api-pdv\\api-pdv\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{F098DA70-50E1-8CD3-29BD-AF7D52BF9981}|API-Pdv.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F098DA70-50E1-8CD3-29BD-AF7D52BF9981}|API-Pdv.csproj|c:\\users\\joheb\\riderprojects\\api-pdv\\api-pdv\\controller\\v1\\itempedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F098DA70-50E1-8CD3-29BD-AF7D52BF9981}|API-Pdv.csproj|solutionrelative:controller\\v1\\itempedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F098DA70-50E1-8CD3-29BD-AF7D52BF9981}|API-Pdv.csproj|c:\\users\\joheb\\riderprojects\\api-pdv\\api-pdv\\infraestructure\\repositories\\pedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F098DA70-50E1-8CD3-29BD-AF7D52BF9981}|API-Pdv.csproj|solutionrelative:infraestructure\\repositories\\pedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -53,6 +37,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{F098DA70-50E1-8CD3-29BD-AF7D52BF9981}|API-Pdv.csproj|c:\\users\\joheb\\riderprojects\\api-pdv\\api-pdv\\interfaces\\repositories\\ipagamentocaixa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F098DA70-50E1-8CD3-29BD-AF7D52BF9981}|API-Pdv.csproj|solutionrelative:interfaces\\repositories\\ipagamentocaixa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F098DA70-50E1-8CD3-29BD-AF7D52BF9981}|API-Pdv.csproj|c:\\users\\joheb\\riderprojects\\api-pdv\\api-pdv\\controller\\v1\\itempedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F098DA70-50E1-8CD3-29BD-AF7D52BF9981}|API-Pdv.csproj|solutionrelative:controller\\v1\\itempedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F098DA70-50E1-8CD3-29BD-AF7D52BF9981}|API-Pdv.csproj|c:\\users\\joheb\\riderprojects\\api-pdv\\api-pdv\\interfaces\\repositories\\iitempedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -134,50 +122,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "API-Pdv.http",
-              "DocumentMoniker": "C:\\Users\\joheb\\RiderProjects\\API-Pdv\\API-Pdv\\API-Pdv.http",
-              "RelativeDocumentMoniker": "API-Pdv.http",
-              "ToolTip": "C:\\Users\\joheb\\RiderProjects\\API-Pdv\\API-Pdv\\API-Pdv.http",
-              "RelativeToolTip": "API-Pdv.http",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2025-06-27T16:34:09.108Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\joheb\\RiderProjects\\API-Pdv\\API-Pdv\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\joheb\\RiderProjects\\API-Pdv\\API-Pdv\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-06-27T16:32:48.267Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\joheb\\RiderProjects\\API-Pdv\\API-Pdv\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\joheb\\RiderProjects\\API-Pdv\\API-Pdv\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-27T16:32:35.547Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 3,
               "Title": "PedidoConfiguration.cs",
               "DocumentMoniker": "C:\\Users\\joheb\\RiderProjects\\API-Pdv\\API-Pdv\\Infraestructure\\Data\\Configurations\\PedidoConfiguration.cs",
               "RelativeDocumentMoniker": "Infraestructure\\Data\\Configurations\\PedidoConfiguration.cs",
@@ -189,7 +138,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 4,
               "Title": "PagamentoCaixaConfiguration.cs",
               "DocumentMoniker": "C:\\Users\\joheb\\RiderProjects\\API-Pdv\\API-Pdv\\Infraestructure\\Data\\Configurations\\PagamentoCaixaConfiguration.cs",
               "RelativeDocumentMoniker": "Infraestructure\\Data\\Configurations\\PagamentoCaixaConfiguration.cs",
@@ -201,7 +150,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 6,
               "Title": "IPedido.cs",
               "DocumentMoniker": "C:\\Users\\joheb\\RiderProjects\\API-Pdv\\API-Pdv\\Interfaces\\Repositories\\IPedido.cs",
               "RelativeDocumentMoniker": "Interfaces\\Repositories\\IPedido.cs",
@@ -213,7 +162,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 5,
               "Title": "Pedido.cs",
               "DocumentMoniker": "C:\\Users\\joheb\\RiderProjects\\API-Pdv\\API-Pdv\\Controller\\V1\\Pedido.cs",
               "RelativeDocumentMoniker": "Controller\\V1\\Pedido.cs",
@@ -225,7 +174,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 8,
               "Title": "IPagamentoCaixa.cs",
               "DocumentMoniker": "C:\\Users\\joheb\\RiderProjects\\API-Pdv\\API-Pdv\\Interfaces\\Repositories\\IPagamentoCaixa.cs",
               "RelativeDocumentMoniker": "Interfaces\\Repositories\\IPagamentoCaixa.cs",
@@ -237,7 +186,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 7,
               "Title": "PagamentoCaixa.cs",
               "DocumentMoniker": "C:\\Users\\joheb\\RiderProjects\\API-Pdv\\API-Pdv\\Controller\\V1\\PagamentoCaixa.cs",
               "RelativeDocumentMoniker": "Controller\\V1\\PagamentoCaixa.cs",
@@ -249,20 +198,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 9,
               "Title": "ItemPedido.cs",
               "DocumentMoniker": "C:\\Users\\joheb\\RiderProjects\\API-Pdv\\API-Pdv\\Controller\\V1\\ItemPedido.cs",
               "RelativeDocumentMoniker": "Controller\\V1\\ItemPedido.cs",
               "ToolTip": "C:\\Users\\joheb\\RiderProjects\\API-Pdv\\API-Pdv\\Controller\\V1\\ItemPedido.cs",
               "RelativeToolTip": "Controller\\V1\\ItemPedido.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAABEAAAAAAAAAAAAnwCMAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-24T03:29:30.72Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-24T03:29:30.72Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
               "Title": "ItemPedido.cs",
               "DocumentMoniker": "C:\\Users\\joheb\\RiderProjects\\API-Pdv\\API-Pdv\\Infraestructure\\Repositories\\ItemPedido.cs",
               "RelativeDocumentMoniker": "Infraestructure\\Repositories\\ItemPedido.cs",
@@ -274,7 +222,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "PagamentoCaixa.cs",
               "DocumentMoniker": "C:\\Users\\joheb\\RiderProjects\\API-Pdv\\API-Pdv\\Infraestructure\\Repositories\\PagamentoCaixa.cs",
               "RelativeDocumentMoniker": "Infraestructure\\Repositories\\PagamentoCaixa.cs",
@@ -286,7 +234,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "Pedido.cs",
               "DocumentMoniker": "C:\\Users\\joheb\\RiderProjects\\API-Pdv\\API-Pdv\\Infraestructure\\Repositories\\Pedido.cs",
               "RelativeDocumentMoniker": "Infraestructure\\Repositories\\Pedido.cs",
@@ -299,7 +247,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 10,
               "Title": "IItemPedido.cs",
               "DocumentMoniker": "C:\\Users\\joheb\\RiderProjects\\API-Pdv\\API-Pdv\\Interfaces\\Repositories\\IItemPedido.cs",
               "RelativeDocumentMoniker": "Interfaces\\Repositories\\IItemPedido.cs",
@@ -311,7 +259,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 11,
               "Title": "ItemPedidoConfiguration.cs",
               "DocumentMoniker": "C:\\Users\\joheb\\RiderProjects\\API-Pdv\\API-Pdv\\Infraestructure\\Data\\Configurations\\ItemPedidoConfiguration.cs",
               "RelativeDocumentMoniker": "Infraestructure\\Data\\Configurations\\ItemPedidoConfiguration.cs",
@@ -323,7 +271,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 12,
               "Title": "MotoboyConfiguration.cs",
               "DocumentMoniker": "C:\\Users\\joheb\\RiderProjects\\API-Pdv\\API-Pdv\\Infraestructure\\Data\\Configurations\\MotoboyConfiguration.cs",
               "RelativeDocumentMoniker": "Infraestructure\\Data\\Configurations\\MotoboyConfiguration.cs",
@@ -335,7 +283,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 14,
               "Title": "IMotoboy.cs",
               "DocumentMoniker": "C:\\Users\\joheb\\RiderProjects\\API-Pdv\\API-Pdv\\Interfaces\\Repositories\\IMotoboy.cs",
               "RelativeDocumentMoniker": "Interfaces\\Repositories\\IMotoboy.cs",
@@ -347,7 +295,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 13,
               "Title": "Motoboy.cs",
               "DocumentMoniker": "C:\\Users\\joheb\\RiderProjects\\API-Pdv\\API-Pdv\\Infraestructure\\Repositories\\Motoboy.cs",
               "RelativeDocumentMoniker": "Infraestructure\\Repositories\\Motoboy.cs",
@@ -359,7 +307,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 17,
               "Title": "CaixaConfiguration.cs",
               "DocumentMoniker": "C:\\Users\\joheb\\RiderProjects\\API-Pdv\\API-Pdv\\Infraestructure\\Data\\Configurations\\CaixaConfiguration.cs",
               "RelativeDocumentMoniker": "Infraestructure\\Data\\Configurations\\CaixaConfiguration.cs",
@@ -371,7 +319,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 15,
               "Title": "Motoboy.cs",
               "DocumentMoniker": "C:\\Users\\joheb\\RiderProjects\\API-Pdv\\API-Pdv\\Controller\\V1\\Motoboy.cs",
               "RelativeDocumentMoniker": "Controller\\V1\\Motoboy.cs",
@@ -383,7 +331,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 19,
               "Title": "ICaixa.cs",
               "DocumentMoniker": "C:\\Users\\joheb\\RiderProjects\\API-Pdv\\API-Pdv\\Interfaces\\Repositories\\ICaixa.cs",
               "RelativeDocumentMoniker": "Interfaces\\Repositories\\ICaixa.cs",
@@ -395,7 +343,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 18,
               "Title": "Caixa.cs",
               "DocumentMoniker": "C:\\Users\\joheb\\RiderProjects\\API-Pdv\\API-Pdv\\Controller\\V1\\Caixa.cs",
               "RelativeDocumentMoniker": "Controller\\V1\\Caixa.cs",
@@ -407,7 +355,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 23,
               "Title": "PagamentoCaixa.cs",
               "DocumentMoniker": "C:\\Users\\joheb\\RiderProjects\\API-Pdv\\API-Pdv\\Domain\\Entities\\PagamentoCaixa.cs",
               "RelativeDocumentMoniker": "Domain\\Entities\\PagamentoCaixa.cs",
@@ -419,7 +367,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 26,
               "Title": "Empresa.cs",
               "DocumentMoniker": "C:\\Users\\joheb\\RiderProjects\\API-Pdv\\API-Pdv\\Domain\\Entities\\Empresa.cs",
               "RelativeDocumentMoniker": "Domain\\Entities\\Empresa.cs",
@@ -431,7 +379,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 16,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "C:\\Users\\joheb\\RiderProjects\\API-Pdv\\API-Pdv\\Infraestructure\\Data\\Context\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "Infraestructure\\Data\\Context\\ApplicationDbContext.cs",
@@ -443,7 +391,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 20,
               "Title": "Caixa.cs",
               "DocumentMoniker": "C:\\Users\\joheb\\RiderProjects\\API-Pdv\\API-Pdv\\Infraestructure\\Repositories\\Caixa.cs",
               "RelativeDocumentMoniker": "Infraestructure\\Repositories\\Caixa.cs",
@@ -455,7 +403,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 22,
               "Title": "Pedido.cs",
               "DocumentMoniker": "C:\\Users\\joheb\\RiderProjects\\API-Pdv\\API-Pdv\\Domain\\Entities\\Pedido.cs",
               "RelativeDocumentMoniker": "Domain\\Entities\\Pedido.cs",
@@ -467,7 +415,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 24,
               "Title": "Motoboy.cs",
               "DocumentMoniker": "C:\\Users\\joheb\\RiderProjects\\API-Pdv\\API-Pdv\\Domain\\Entities\\Motoboy.cs",
               "RelativeDocumentMoniker": "Domain\\Entities\\Motoboy.cs",
@@ -479,7 +427,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 25,
               "Title": "ItemPedido.cs",
               "DocumentMoniker": "C:\\Users\\joheb\\RiderProjects\\API-Pdv\\API-Pdv\\Domain\\Entities\\ItemPedido.cs",
               "RelativeDocumentMoniker": "Domain\\Entities\\ItemPedido.cs",
@@ -491,7 +439,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 27,
               "Title": "Caixa.cs",
               "DocumentMoniker": "C:\\Users\\joheb\\RiderProjects\\API-Pdv\\API-Pdv\\Domain\\Entities\\Caixa.cs",
               "RelativeDocumentMoniker": "Domain\\Entities\\Caixa.cs",
@@ -503,7 +451,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 21,
               "Title": "Produto.cs",
               "DocumentMoniker": "C:\\Users\\joheb\\RiderProjects\\API-Pdv\\API-Pdv\\Domain\\Entities\\Produto.cs",
               "RelativeDocumentMoniker": "Domain\\Entities\\Produto.cs",
