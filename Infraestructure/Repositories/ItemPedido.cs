@@ -4,7 +4,10 @@ using Microsoft.EntityFrameworkCore;
 using API_Pdv.Infraestructure.Data.Context;
 
 using ItemPedidoEntity = API_Pdv.Entities.ItemPedido;
+using API_Pdv.Interfaces.Repositories;
 
+
+namespace API_Pdv.Infraestructure.Repositories;
 public class ItemPedido : IItemPedido
 {
     private readonly ApplicationDbContext _context;

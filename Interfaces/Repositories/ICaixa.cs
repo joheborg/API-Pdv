@@ -1,6 +1,9 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using CaixaEntity = API_Pdv.Entities.Caixa;
+
+namespace API_Pdv.Infraestructure.Repositories;
+
 public interface ICaixa
 {
     Task<CaixaEntity> GetByIdAsync(int id);

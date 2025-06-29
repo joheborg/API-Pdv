@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using PedidoEntity = API_Pdv.Entities.Pedido;
 
+namespace API_Pdv.Interfaces.Repositories;
 
 public interface IPedido
 {

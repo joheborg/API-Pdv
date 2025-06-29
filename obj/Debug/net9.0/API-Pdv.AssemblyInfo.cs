@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("API-Pdv")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8926f8a210d49f822223b3040f70bf0c8860ed79")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a39bf7609853fc8d28226476bff2684c63df9f47")]
 [assembly: System.Reflection.AssemblyProductAttribute("API-Pdv")]
 [assembly: System.Reflection.AssemblyTitleAttribute("API-Pdv")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

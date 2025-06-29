@@ -1,9 +1,10 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using API_Pdv.Infraestructure.Data.Context;
 using Microsoft.EntityFrameworkCore;
 using CaixaEntity= API_Pdv.Entities.Caixa;
 
-namespace API_Pdv.Infraestructure.Data.Context;
+namespace API_Pdv.Infraestructure.Repositories;
 
 public class Caixa : ICaixa
 {

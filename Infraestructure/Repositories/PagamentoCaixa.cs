@@ -4,8 +4,9 @@ using Microsoft.EntityFrameworkCore;
 using API_Pdv.Infraestructure.Data.Context;
 
 using PagamentoCaixaEntity = API_Pdv.Entities.PagamentoCaixa;
+using API_Pdv.Interfaces.Repositories;
 
-
+namespace API_Pdv.Infraestructure.Repositories;
 public class PagamentoCaixa : IPagamentoCaixa
 {
     private readonly ApplicationDbContext _context;

@@ -1,3 +1,4 @@
+using API_Pdv.Infraestructure.Repositories;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
 using MotoBoyEntity = API_Pdv.Entities.Motoboy;

@@ -22,6 +22,11 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 // Dependency Injection
 builder.Services.AddScoped<IProduto, API_Pdv.Infraestructure.Repositories.Produto>();
 builder.Services.AddScoped<IEmpresa, API_Pdv.Infraestructure.Repositories.Empresa>();
+builder.Services.AddScoped<IItemPedido, API_Pdv.Infraestructure.Repositories.ItemPedido>();
+//builder.Services.AddScoped<ICaixa, API_Pdv.Infraestructure.Repositories.Caixa>();
+//builder.Services.AddScoped<IMotoboy, API_Pdv.Infraestructure.Repositories.Motoboy>();
+builder.Services.AddScoped<IPedido, API_Pdv.Infraestructure.Repositories.Pedido>();
+builder.Services.AddScoped<IPagamentoCaixa, API_Pdv.Infraestructure.Repositories.PagamentoCaixa>();
 
 // Adiciona Swagger
 builder.Services.AddEndpointsApiExplorer();
@@ -41,6 +46,5 @@ if (app.Environment.IsDevelopment())
     });
 }
 
-app.UseHttpsRedirection();
 app.MapControllers();
 app.Run();

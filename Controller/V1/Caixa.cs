@@ -1,3 +1,4 @@
+using API_Pdv.Infraestructure.Repositories;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
 using CaixaEntity = API_Pdv.Entities.Caixa;

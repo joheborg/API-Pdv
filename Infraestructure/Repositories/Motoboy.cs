@@ -4,6 +4,8 @@ using Microsoft.EntityFrameworkCore;
 using API_Pdv.Infraestructure.Data.Context;
 using MotoBoyEntity = API_Pdv.Entities.Motoboy;
 
+
+namespace API_Pdv.Infraestructure.Repositories;
 public class MotoboyRepository : IMotoboy
 {
     private readonly ApplicationDbContext _context;

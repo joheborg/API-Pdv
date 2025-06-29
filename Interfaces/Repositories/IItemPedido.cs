@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using ItemPedidoEntity = API_Pdv.Entities.ItemPedido;
 
+namespace API_Pdv.Interfaces.Repositories;
 public interface IItemPedido
 {
     Task<ItemPedidoEntity> GetByIdAsync(int id);

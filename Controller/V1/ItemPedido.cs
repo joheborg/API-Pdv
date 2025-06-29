@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
 using ItemPedidoEntity = API_Pdv.Entities.ItemPedido;
-
+using API_Pdv.Interfaces.Repositories;
 
 [ApiController]
 [Route("api/v1/[controller]")]

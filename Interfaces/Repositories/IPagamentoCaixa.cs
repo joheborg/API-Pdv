@@ -1,6 +1,8 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using PagamentoCaixaEntity = API_Pdv.Entities.PagamentoCaixa;
+
+namespace API_Pdv.Interfaces.Repositories;
 public interface IPagamentoCaixa
 {
     Task<PagamentoCaixaEntity> GetByIdAsync(int id);
