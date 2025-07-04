@@ -13,4 +13,5 @@ public interface IProduto
     Task<ProdutoEntities> GetByCodigoAsync(int empresaId, string codigoProduto);
     Task<ProdutoEntities> GetByCodigoBarrasAsync(string codigoBarras);
     Task<ProdutoEntities> GetByCodigoEanAsync(string codigoEan);
+    Task<IEnumerable<ProdutoEntities>> GetByCategoriaAsync(int categoriaId);
 }

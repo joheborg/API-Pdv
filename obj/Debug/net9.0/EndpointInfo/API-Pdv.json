@@ -5,6 +5,49 @@
     "version": "v1"
   },
   "paths": {
+    "/api/v1/Auth/login": {
+      "post": {
+        "tags": [
+          "Auth"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/v1/Auth/logout": {
+      "post": {
+        "tags": [
+          "Auth"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/v1/Caixa": {
       "get": {
         "tags": [
@@ -111,6 +154,131 @@
       "delete": {
         "tags": [
           "Caixa"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/v1/Categoria": {
+      "get": {
+        "tags": [
+          "Categoria"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Categoria"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Categoria"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Categoria"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Categoria"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/v1/Categoria/{id}": {
+      "get": {
+        "tags": [
+          "Categoria"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Categoria"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Categoria"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Categoria"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Categoria"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Categoria"
         ],
         "parameters": [
           {
@@ -1087,6 +1255,154 @@
         }
       }
     },
+    "/api/v1/Produto/categoria/{categoriaId}": {
+      "get": {
+        "tags": [
+          "Produto"
+        ],
+        "parameters": [
+          {
+            "name": "categoriaId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/v1/StatusPedido": {
+      "get": {
+        "tags": [
+          "StatusPedido"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "StatusPedido"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/StatusPedido"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/StatusPedido"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/StatusPedido"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/v1/StatusPedido/{id}": {
+      "get": {
+        "tags": [
+          "StatusPedido"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "StatusPedido"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/StatusPedido"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/StatusPedido"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/StatusPedido"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "StatusPedido"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/v1/Usuario": {
       "get": {
         "tags": [
@@ -1102,6 +1418,25 @@
         "tags": [
           "Usuario"
         ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Usuario"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Usuario"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Usuario"
+              }
+            }
+          }
+        },
         "responses": {
           "200": {
             "description": "OK"
@@ -1146,6 +1481,25 @@
             }
           }
         ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Usuario"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Usuario"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Usuario"
+              }
+            }
+          }
+        },
         "responses": {
           "200": {
             "description": "OK"
@@ -1173,10 +1527,165 @@
           }
         }
       }
+    },
+    "/api/v1/Usuario/empresa/{empresaId}": {
+      "get": {
+        "tags": [
+          "Usuario"
+        ],
+        "parameters": [
+          {
+            "name": "empresaId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/v1/Usuario/ativos": {
+      "get": {
+        "tags": [
+          "Usuario"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/v1/Usuario/email/{email}": {
+      "get": {
+        "tags": [
+          "Usuario"
+        ],
+        "parameters": [
+          {
+            "name": "email",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/v1/Usuario/{id}/ativar": {
+      "put": {
+        "tags": [
+          "Usuario"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/v1/Usuario/{id}/desativar": {
+      "put": {
+        "tags": [
+          "Usuario"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/v1/Usuario/{id}/alterar-senha": {
+      "put": {
+        "tags": [
+          "Usuario"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AlterarSenhaRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AlterarSenhaRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AlterarSenhaRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
     }
   },
   "components": {
     "schemas": {
+      "AlterarSenhaRequest": {
+        "type": "object",
+        "properties": {
+          "novaSenha": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "Caixa": {
         "type": "object",
         "properties": {
@@ -1257,6 +1766,32 @@
               "$ref": "#/components/schemas/Pedido"
             },
             "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Categoria": {
+        "required": [
+          "descricao"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "descricao": {
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string"
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "updatedAt": {
+            "type": "string",
+            "format": "date-time"
           }
         },
         "additionalProperties": false
@@ -1396,6 +1931,112 @@
         },
         "additionalProperties": false
       },
+      "Funcionario": {
+        "required": [
+          "nome"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "nome": {
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string"
+          },
+          "cpf": {
+            "maxLength": 14,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "rg": {
+            "maxLength": 20,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "telefone": {
+            "maxLength": 20,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "email": {
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "cargo": {
+            "maxLength": 50,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "salario": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "dataAdmissao": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "dataDemissao": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "ativo": {
+            "type": "boolean"
+          },
+          "endereco": {
+            "maxLength": 255,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "cidade": {
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "uf": {
+            "maxLength": 2,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "cep": {
+            "maxLength": 10,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "empresaId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "updatedAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "empresa": {
+            "$ref": "#/components/schemas/Empresa"
+          }
+        },
+        "additionalProperties": false
+      },
       "ItemPedido": {
         "type": "object",
         "properties": {
@@ -1414,6 +2055,9 @@
             "type": "integer",
             "format": "int32"
           },
+          "produto": {
+            "$ref": "#/components/schemas/Produto"
+          },
           "quantidade": {
             "type": "integer",
             "format": "int32"
@@ -1422,9 +2066,38 @@
             "type": "number",
             "format": "double"
           },
-          "total": {
+          "subtotal": {
             "type": "number",
             "format": "double"
+          },
+          "observacoes": {
+            "maxLength": 500,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false
+      },
+      "LoginRequest": {
+        "required": [
+          "email",
+          "senha"
+        ],
+        "type": "object",
+        "properties": {
+          "email": {
+            "minLength": 1,
+            "type": "string",
+            "format": "email"
+          },
+          "senha": {
+            "minLength": 6,
+            "type": "string"
           }
         },
         "additionalProperties": false
@@ -1513,41 +2186,98 @@
         "additionalProperties": false
       },
       "Pedido": {
+        "required": [
+          "nomeCliente",
+          "numeroPedido",
+          "status",
+          "telefoneCliente"
+        ],
         "type": "object",
         "properties": {
           "id": {
             "type": "integer",
             "format": "int32"
           },
-          "empresaId": {
+          "numeroPedido": {
+            "maxLength": 50,
+            "minLength": 0,
+            "type": "string"
+          },
+          "nomeCliente": {
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string"
+          },
+          "telefoneCliente": {
+            "maxLength": 20,
+            "minLength": 0,
+            "type": "string"
+          },
+          "emailCliente": {
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "enderecoCliente": {
+            "maxLength": 255,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "quantidadeItens": {
             "type": "integer",
             "format": "int32"
           },
-          "caixaId": {
+          "total": {
+            "type": "number",
+            "format": "double"
+          },
+          "status": {
+            "maxLength": 50,
+            "minLength": 0,
+            "type": "string"
+          },
+          "dataPedido": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "dataConclusao": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "observacoes": {
+            "maxLength": 500,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "situacaoId": {
             "type": "integer",
             "format": "int32",
             "nullable": true
           },
-          "caixa": {
-            "$ref": "#/components/schemas/Caixa"
+          "empresaId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
           },
-          "dataHora": {
+          "createdAt": {
             "type": "string",
             "format": "date-time"
           },
-          "valorTotal": {
-            "type": "number",
-            "format": "double"
-          },
-          "observacao": {
+          "updatedAt": {
             "type": "string",
-            "nullable": true
+            "format": "date-time"
           },
-          "status": {
-            "type": "string",
-            "nullable": true
+          "situacao": {
+            "$ref": "#/components/schemas/StatusPedido"
           },
-          "itens": {
+          "empresa": {
+            "$ref": "#/components/schemas/Empresa"
+          },
+          "itensPedido": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/ItemPedido"
@@ -1570,6 +2300,17 @@
           "empresaId": {
             "type": "integer",
             "format": "int32"
+          },
+          "empresa": {
+            "$ref": "#/components/schemas/Empresa"
+          },
+          "categoriaId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "categoria": {
+            "$ref": "#/components/schemas/Categoria"
           },
           "codigoProduto": {
             "maxLength": 50,
@@ -1611,12 +2352,6 @@
             "nullable": true
           },
           "descricao": {
-            "type": "string",
-            "nullable": true
-          },
-          "categoria": {
-            "maxLength": 100,
-            "minLength": 0,
             "type": "string",
             "nullable": true
           },
@@ -1823,7 +2558,114 @@
           }
         },
         "additionalProperties": false
+      },
+      "StatusPedido": {
+        "required": [
+          "descricao"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "descricao": {
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string"
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "updatedAt": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Usuario": {
+        "required": [
+          "email",
+          "nome",
+          "senha"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "nome": {
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string"
+          },
+          "email": {
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string"
+          },
+          "senha": {
+            "maxLength": 255,
+            "minLength": 0,
+            "type": "string"
+          },
+          "perfil": {
+            "maxLength": 20,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "ativo": {
+            "type": "boolean"
+          },
+          "ultimoAcesso": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "funcionarioId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "empresaId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "updatedAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "funcionario": {
+            "$ref": "#/components/schemas/Funcionario"
+          },
+          "empresa": {
+            "$ref": "#/components/schemas/Empresa"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "securitySchemes": {
+      "Bearer": {
+        "type": "apiKey",
+        "description": "JWT Authorization header using the Bearer scheme. Example: \"Authorization: Bearer {token}\"",
+        "name": "Authorization",
+        "in": "header"
       }
     }
-  }
+  },
+  "security": [
+    {
+      "Bearer": [ ]
+    }
+  ]
 }

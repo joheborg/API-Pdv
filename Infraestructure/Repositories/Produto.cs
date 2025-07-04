@@ -162,4 +162,11 @@ public class Produto : IProduto
         return await _context.Produtos
             .FirstOrDefaultAsync(p => p.CodigoEan == codigoEan);
     }
+
+    public async Task<IEnumerable<ProdutoEntities>> GetByCategoriaAsync(int categoriaId)
+    {
+        return await _context.Produtos
+            .Where(p => p.CategoriaId == categoriaId)
+            .ToListAsync();
+    }
 }

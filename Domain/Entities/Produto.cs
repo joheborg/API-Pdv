@@ -12,6 +12,13 @@ public class Produto
     public int EmpresaId { get; set; }
 
     [ForeignKey(nameof(EmpresaId))]
+    public virtual Empresa? Empresa { get; set; }
+
+    // Foreign key para categoria
+    public int? CategoriaId { get; set; }
+
+    [ForeignKey(nameof(CategoriaId))]
+    public virtual Categoria? Categoria { get; set; }
 
     // Dados gerais
     [StringLength(50)]
@@ -36,9 +43,6 @@ public class Produto
     public string? NomeAlternativo { get; set; }
 
     public string? Descricao { get; set; }
-
-    [StringLength(100)]
-    public string? Categoria { get; set; }
 
     public string? Ingredientes { get; set; }
 

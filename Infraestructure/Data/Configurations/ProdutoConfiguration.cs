@@ -15,6 +15,18 @@ public class ProdutoConfiguration : IEntityTypeConfiguration<ProdutoEntities>
         builder.Property(p => p.Id).HasColumnName("id").ValueGeneratedOnAdd();
                
         builder.Property(p => p.EmpresaId).HasColumnName("empresa_id");
+        builder.Property(p => p.CategoriaId).HasColumnName("categoria_id");
+        
+        // Relacionamentos
+        builder.HasOne(p => p.Empresa)
+            .WithMany()
+            .HasForeignKey(p => p.EmpresaId)
+            .OnDelete(DeleteBehavior.Restrict);
+            
+        builder.HasOne(p => p.Categoria)
+            .WithMany()
+            .HasForeignKey(p => p.CategoriaId)
+            .OnDelete(DeleteBehavior.SetNull);
         
         // Dados Gerais
         builder.Property(p => p.CodigoProduto).HasColumnName("codigo_produto").HasMaxLength(50);
@@ -35,7 +47,6 @@ public class ProdutoConfiguration : IEntityTypeConfiguration<ProdutoEntities>
         builder.Property(p => p.Nome).HasColumnName("nome").IsRequired().HasMaxLength(100);
         builder.Property(p => p.NomeAlternativo).HasColumnName("nome_alternativo").HasMaxLength(100);
         builder.Property(p => p.Descricao).HasColumnName("descricao").HasColumnType("TEXT");
-        builder.Property(p => p.Categoria).HasColumnName("categoria").HasMaxLength(100);
         builder.Property(p => p.Ingredientes).HasColumnName("ingredientes").HasColumnType("TEXT");
         
         // Campo Situacao
@@ -92,7 +103,7 @@ public class ProdutoConfiguration : IEntityTypeConfiguration<ProdutoEntities>
         // Índices
         builder.HasIndex(p => new { p.EmpresaId, p.CodigoProduto }).HasDatabaseName("uk_empresa_codigo_produto").IsUnique();
         builder.HasIndex(p => p.NCM).HasDatabaseName("idx_ncm");
-        builder.HasIndex(p => p.Categoria).HasDatabaseName("idx_categoria");
+        builder.HasIndex(p => p.CategoriaId).HasDatabaseName("idx_categoria_id");
         builder.HasIndex(p => p.CodigoEan).HasDatabaseName("idx_codigo_ean");
         builder.HasIndex(p => p.CodigoBarras).HasDatabaseName("idx_codigo_barras");
         builder.HasIndex(p => p.Situacao).HasDatabaseName("idx_situacao");

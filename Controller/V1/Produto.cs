@@ -110,6 +110,20 @@ namespace WebPdv.Controllers
                 return StatusCode(500, $"Erro interno do servidor: {ex.Message}");
             }
         }
+
+        [HttpGet("categoria/{categoriaId}")]
+        public async Task<IActionResult> GetByCategoria(int categoriaId)
+        {
+            try
+            {
+                var produtos = await _produtoRepository.GetByCategoriaAsync(categoriaId);
+                return Ok(produtos);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Erro interno do servidor: {ex.Message}");
+            }
+        }
         
         [HttpPost]
         public async Task<IActionResult> Create([FromBody] ProdutoEntities produto)
