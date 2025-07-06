@@ -1032,6 +1032,60 @@
         }
       }
     },
+    "/api/v1/Pedido/comanda/{empresaId}/{numeroComanda}": {
+      "get": {
+        "tags": [
+          "Pedido"
+        ],
+        "parameters": [
+          {
+            "name": "empresaId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "numeroComanda",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/v1/Pedido/abertos/{empresaId}": {
+      "get": {
+        "tags": [
+          "Pedido"
+        ],
+        "parameters": [
+          {
+            "name": "empresaId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/v1/Produto": {
       "get": {
         "tags": [
@@ -2202,6 +2256,12 @@
             "maxLength": 50,
             "minLength": 0,
             "type": "string"
+          },
+          "numeroComanda": {
+            "maxLength": 20,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
           },
           "nomeCliente": {
             "maxLength": 100,

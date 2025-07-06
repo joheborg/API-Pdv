@@ -1,4 +1,5 @@
 using API_Pdv.Interfaces.Repositories;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using ProdutoEntities = API_Pdv.Entities.Produto;
 
@@ -6,6 +7,7 @@ namespace WebPdv.Controllers
 {
     [ApiController]
     [Route("api/v1/[controller]")]
+    [Authorize]
     public class ProdutoController : ControllerBase
     {
         private readonly IProduto _produtoRepository;

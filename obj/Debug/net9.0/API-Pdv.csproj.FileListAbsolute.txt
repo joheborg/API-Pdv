@@ -275,10 +275,10 @@ C:\Users\joheb\RiderProjects\API-Pdv\API\obj\Debug\net9.0\staticwebassets.build.
 C:\Users\joheb\RiderProjects\API-Pdv\API\obj\Debug\net9.0\staticwebassets.build.json.cache
 C:\Users\joheb\RiderProjects\API-Pdv\API\obj\Debug\net9.0\staticwebassets.development.json
 C:\Users\joheb\RiderProjects\API-Pdv\API\obj\Debug\net9.0\staticwebassets.build.endpoints.json
-C:\Users\joheb\RiderProjects\API-Pdv\API\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
 C:\Users\joheb\RiderProjects\API-Pdv\API\obj\Debug\net9.0\API-Pdv.csproj.Up2Date
 C:\Users\joheb\RiderProjects\API-Pdv\API\obj\Debug\net9.0\API-Pdv.dll
 C:\Users\joheb\RiderProjects\API-Pdv\API\obj\Debug\net9.0\refint\API-Pdv.dll
 C:\Users\joheb\RiderProjects\API-Pdv\API\obj\Debug\net9.0\API-Pdv.pdb
 C:\Users\joheb\RiderProjects\API-Pdv\API\obj\Debug\net9.0\API-Pdv.genruntimeconfig.cache
 C:\Users\joheb\RiderProjects\API-Pdv\API\obj\Debug\net9.0\ref\API-Pdv.dll
+C:\Users\joheb\RiderProjects\API-Pdv\API\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt

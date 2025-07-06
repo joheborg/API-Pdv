@@ -1,4 +1,5 @@
 using API_Pdv.Infraestructure.Repositories;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
 using MotoBoyEntity = API_Pdv.Entities.Motoboy;
@@ -6,6 +7,7 @@ using MotoBoyEntity = API_Pdv.Entities.Motoboy;
 
 [ApiController]
 [Route("api/v1/[controller]")]
+[Authorize]
 public class MotoboyController : ControllerBase
 {
     private readonly IMotoboy _motoboyRepository;

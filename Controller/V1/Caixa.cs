@@ -1,10 +1,12 @@
 using API_Pdv.Infraestructure.Repositories;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
 using CaixaEntity = API_Pdv.Entities.Caixa;
 
 [ApiController]
 [Route("api/v1/[controller]")]
+[Authorize]
 public class CaixaController : ControllerBase
 {
     private readonly ICaixa _caixaRepository;

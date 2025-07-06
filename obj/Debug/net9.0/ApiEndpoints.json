@@ -663,6 +663,43 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "PedidoController",
+    "Method": "GetPedidosAbertos",
+    "RelativePath": "api/v1/Pedido/abertos/{empresaId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "empresaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PedidoController",
+    "Method": "GetByNumeroComanda",
+    "RelativePath": "api/v1/Pedido/comanda/{empresaId}/{numeroComanda}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "empresaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "numeroComanda",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "WebPdv.Controllers.ProdutoController",
     "Method": "GetAll",
     "RelativePath": "api/v1/Produto",

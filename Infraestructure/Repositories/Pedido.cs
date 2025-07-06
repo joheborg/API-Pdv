@@ -49,4 +49,28 @@ public class Pedido : IPedido
             await _context.SaveChangesAsync();
         }
     }
+
+    public async Task<PedidoEntity?> GetByNumeroComandaAsync(string numeroComanda, int empresaId)
+    {
+        return await _context.Set<PedidoEntity>()
+            .Include(p => p.ItensPedido)
+            .ThenInclude(i => i.Produto)
+            .Include(p => p.Situacao)
+            .Include(p => p.Empresa)
+            .FirstOrDefaultAsync(p => p.NumeroComanda == numeroComanda && p.EmpresaId == empresaId);
+    }
+
+    public async Task<IEnumerable<PedidoEntity>> GetPedidosAbertosAsync(int empresaId)
+    {
+        var statusAbertos = new[] { "Pendente", "Em Preparo", "Pronto" };
+        
+        return await _context.Set<PedidoEntity>()
+            .Include(p => p.ItensPedido)
+            .ThenInclude(i => i.Produto)
+            .Include(p => p.Situacao)
+            .Include(p => p.Empresa)
+            .Where(p => p.EmpresaId == empresaId && statusAbertos.Contains(p.Status))
+            .OrderByDescending(p => p.DataPedido)
+            .ToListAsync();
+    }
 } 

@@ -11,4 +11,6 @@ public interface IPedido
     Task<PedidoEntity> CreateAsync(PedidoEntity pedido);
     Task<PedidoEntity> UpdateAsync(PedidoEntity pedido);
     Task DeleteAsync(int id);
+    Task<PedidoEntity?> GetByNumeroComandaAsync(string numeroComanda, int empresaId);
+    Task<IEnumerable<PedidoEntity>> GetPedidosAbertosAsync(int empresaId);
 } 

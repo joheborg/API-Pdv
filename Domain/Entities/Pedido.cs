@@ -11,6 +11,9 @@ public class Pedido
     [Required, StringLength(50)]
     public string NumeroPedido { get; set; } = "";
     
+    [StringLength(20)]
+    public string? NumeroComanda { get; set; }
+    
     [Required, StringLength(100)]
     public string NomeCliente { get; set; } = "";
     

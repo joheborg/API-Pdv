@@ -1,4 +1,5 @@
 using API_Pdv.Interfaces.Repositories;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using EmpresaEntities = API_Pdv.Entities.Empresa;
 
@@ -6,6 +7,7 @@ namespace WebPdv.Controllers
 {
     [ApiController]
     [Route("api/v1/[controller]")]
+    [Authorize]
     public class EmpresaController : ControllerBase
     {
         private readonly IEmpresa _empresaRepository;

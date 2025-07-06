@@ -1,10 +1,12 @@
 using API_Pdv.Interfaces.Repositories;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
 using PagamentoCaixaEntity = API_Pdv.Entities.PagamentoCaixa;
 
 [ApiController]
 [Route("api/v1/[controller]")]
+[Authorize]
 public class PagamentoCaixaController : ControllerBase
 {
     private readonly IPagamentoCaixa _pagamentoCaixaRepository;
