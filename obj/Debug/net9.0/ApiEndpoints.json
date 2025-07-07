@@ -184,6 +184,16 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "WebPdv.Controllers.CategoriaController",
+    "Method": "GetAllDev",
+    "RelativePath": "api/v1/Categoria/dev/all",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "WebPdv.Controllers.EmpresaController",
     "Method": "GetAll",
     "RelativePath": "api/v1/Empresa",
@@ -279,74 +289,6 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "WebPdv.Controllers.FuncionarioController",
-    "Method": "GetAll",
-    "RelativePath": "api/v1/Funcionario",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "WebPdv.Controllers.FuncionarioController",
-    "Method": "Create",
-    "RelativePath": "api/v1/Funcionario",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "WebPdv.Controllers.FuncionarioController",
-    "Method": "GetById",
-    "RelativePath": "api/v1/Funcionario/{id}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "WebPdv.Controllers.FuncionarioController",
-    "Method": "Update",
-    "RelativePath": "api/v1/Funcionario/{id}",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "WebPdv.Controllers.FuncionarioController",
-    "Method": "Delete",
-    "RelativePath": "api/v1/Funcionario/{id}",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
     "ContainingType": "ItemPedidoController",
     "Method": "GetAll",
     "RelativePath": "api/v1/ItemPedido",
@@ -584,7 +526,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "PedidoController",
+    "ContainingType": "WebPdv.Controllers.PedidoController",
     "Method": "GetAll",
     "RelativePath": "api/v1/Pedido",
     "HttpMethod": "GET",
@@ -594,7 +536,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "PedidoController",
+    "ContainingType": "WebPdv.Controllers.PedidoController",
     "Method": "Create",
     "RelativePath": "api/v1/Pedido",
     "HttpMethod": "POST",
@@ -610,7 +552,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "PedidoController",
+    "ContainingType": "WebPdv.Controllers.PedidoController",
     "Method": "GetById",
     "RelativePath": "api/v1/Pedido/{id}",
     "HttpMethod": "GET",
@@ -626,7 +568,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "PedidoController",
+    "ContainingType": "WebPdv.Controllers.PedidoController",
     "Method": "Update",
     "RelativePath": "api/v1/Pedido/{id}",
     "HttpMethod": "PUT",
@@ -647,7 +589,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "PedidoController",
+    "ContainingType": "WebPdv.Controllers.PedidoController",
     "Method": "Delete",
     "RelativePath": "api/v1/Pedido/{id}",
     "HttpMethod": "DELETE",
@@ -663,40 +605,39 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "PedidoController",
+    "ContainingType": "WebPdv.Controllers.PedidoController",
     "Method": "GetPedidosAbertos",
-    "RelativePath": "api/v1/Pedido/abertos/{empresaId}",
+    "RelativePath": "api/v1/Pedido/abertos",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [
-      {
-        "Name": "empresaId",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
+    "Parameters": [],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "PedidoController",
+    "ContainingType": "WebPdv.Controllers.PedidoController",
     "Method": "GetByNumeroComanda",
-    "RelativePath": "api/v1/Pedido/comanda/{empresaId}/{numeroComanda}",
+    "RelativePath": "api/v1/Pedido/comanda/{numeroComanda}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
-      {
-        "Name": "empresaId",
-        "Type": "System.Int32",
-        "IsRequired": true
-      },
       {
         "Name": "numeroComanda",
         "Type": "System.String",
         "IsRequired": true
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebPdv.Controllers.PedidoController",
+    "Method": "GetAllDev",
+    "RelativePath": "api/v1/Pedido/dev/all",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": []
   },
   {
@@ -813,22 +754,27 @@
   {
     "ContainingType": "WebPdv.Controllers.ProdutoController",
     "Method": "GetByCodigo",
-    "RelativePath": "api/v1/Produto/codigo/{empresaId}/{codigoProduto}",
+    "RelativePath": "api/v1/Produto/codigo/{codigoProduto}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
-      {
-        "Name": "empresaId",
-        "Type": "System.Int32",
-        "IsRequired": true
-      },
       {
         "Name": "codigoProduto",
         "Type": "System.String",
         "IsRequired": true
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebPdv.Controllers.ProdutoController",
+    "Method": "GetAllDev",
+    "RelativePath": "api/v1/Produto/dev/all",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": []
   },
   {

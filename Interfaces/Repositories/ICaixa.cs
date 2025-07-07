@@ -8,6 +8,7 @@ public interface ICaixa
 {
     Task<CaixaEntity> GetByIdAsync(int id);
     Task<IEnumerable<CaixaEntity>> GetAllAsync();
+    Task<IEnumerable<CaixaEntity>> GetByEmpresaAsync(int empresaId);
     Task<CaixaEntity> CreateAsync(CaixaEntity caixa);
     Task<CaixaEntity> UpdateAsync(CaixaEntity caixa);
     Task DeleteAsync(int id);

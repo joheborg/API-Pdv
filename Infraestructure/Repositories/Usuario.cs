@@ -18,7 +18,6 @@ public class UsuarioRepository : IUsuario
     {
         return await _context.Usuarios
             .Include(u => u.Empresa)
-            .Include(u => u.Funcionario)
             .ToListAsync();
     }
 
@@ -26,7 +25,6 @@ public class UsuarioRepository : IUsuario
     {
         return await _context.Usuarios
             .Include(u => u.Empresa)
-            .Include(u => u.Funcionario)
             .FirstOrDefaultAsync(u => u.Id == id);
     }
 
@@ -34,7 +32,6 @@ public class UsuarioRepository : IUsuario
     {
         return await _context.Usuarios
             .Include(u => u.Empresa)
-            .Include(u => u.Funcionario)
             .FirstOrDefaultAsync(u => u.Email == email);
     }
 
@@ -42,7 +39,6 @@ public class UsuarioRepository : IUsuario
     {
         return await _context.Usuarios
             .Include(u => u.Empresa)
-            .Include(u => u.Funcionario)
             .Where(u => u.EmpresaId == empresaId)
             .ToListAsync();
     }
@@ -51,7 +47,6 @@ public class UsuarioRepository : IUsuario
     {
         return await _context.Usuarios
             .Include(u => u.Empresa)
-            .Include(u => u.Funcionario)
             .Where(u => u.Ativo)
             .ToListAsync();
     }
@@ -80,7 +75,6 @@ public class UsuarioRepository : IUsuario
         existingUsuario.Perfil = usuario.Perfil;
         existingUsuario.Ativo = usuario.Ativo;
         existingUsuario.UltimoAcesso = usuario.UltimoAcesso;
-        existingUsuario.FuncionarioId = usuario.FuncionarioId;
         existingUsuario.EmpresaId = usuario.EmpresaId;
         existingUsuario.UpdatedAt = DateTime.Now;
 

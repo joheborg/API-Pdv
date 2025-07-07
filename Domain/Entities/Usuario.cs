@@ -24,16 +24,12 @@ public class Usuario
     
     public DateTime? UltimoAcesso { get; set; }
     
-    public int? FuncionarioId { get; set; }
     public int? EmpresaId { get; set; }
     
     public DateTime CreatedAt { get; set; } = DateTime.Now;
     public DateTime UpdatedAt { get; set; } = DateTime.Now;
     
     // Relacionamentos
-    [ForeignKey(nameof(FuncionarioId))]
-    public virtual Funcionario? Funcionario { get; set; }
-    
     [ForeignKey(nameof(EmpresaId))]
     public virtual Empresa? Empresa { get; set; }
 } 

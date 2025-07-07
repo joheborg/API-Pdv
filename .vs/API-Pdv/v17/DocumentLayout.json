@@ -3,68 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\joheb\\RiderProjects\\API-Pdv\\API\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F098DA70-50E1-8CD3-29BD-AF7D52BF9981}|API-Pdv.csproj|c:\\users\\joheb\\riderprojects\\api-pdv\\api\\controller\\v1\\itempedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F098DA70-50E1-8CD3-29BD-AF7D52BF9981}|API-Pdv.csproj|solutionrelative:controller\\v1\\itempedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F098DA70-50E1-8CD3-29BD-AF7D52BF9981}|API-Pdv.csproj|c:\\users\\joheb\\riderprojects\\api-pdv\\api\\controller\\v1\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F098DA70-50E1-8CD3-29BD-AF7D52BF9981}|API-Pdv.csproj|solutionrelative:controller\\v1\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F098DA70-50E1-8CD3-29BD-AF7D52BF9981}|API-Pdv.csproj|c:\\users\\joheb\\riderprojects\\api-pdv\\api\\infraestructure\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F098DA70-50E1-8CD3-29BD-AF7D52BF9981}|API-Pdv.csproj|solutionrelative:infraestructure\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F098DA70-50E1-8CD3-29BD-AF7D52BF9981}|API-Pdv.csproj|c:\\users\\joheb\\riderprojects\\api-pdv\\api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F098DA70-50E1-8CD3-29BD-AF7D52BF9981}|API-Pdv.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F098DA70-50E1-8CD3-29BD-AF7D52BF9981}|API-Pdv.csproj|c:\\users\\joheb\\riderprojects\\api-pdv\\api\\controller\\v1\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F098DA70-50E1-8CD3-29BD-AF7D52BF9981}|API-Pdv.csproj|solutionrelative:controller\\v1\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F098DA70-50E1-8CD3-29BD-AF7D52BF9981}|API-Pdv.csproj|c:\\users\\joheb\\riderprojects\\api-pdv\\api\\infraestructure\\repositories\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F098DA70-50E1-8CD3-29BD-AF7D52BF9981}|API-Pdv.csproj|solutionrelative:infraestructure\\repositories\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F098DA70-50E1-8CD3-29BD-AF7D52BF9981}|API-Pdv.csproj|c:\\users\\joheb\\riderprojects\\api-pdv\\api\\controller\\v1\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F098DA70-50E1-8CD3-29BD-AF7D52BF9981}|API-Pdv.csproj|solutionrelative:controller\\v1\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F098DA70-50E1-8CD3-29BD-AF7D52BF9981}|API-Pdv.csproj|c:\\users\\joheb\\riderprojects\\api-pdv\\api\\infraestructure\\repositories\\itempedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F098DA70-50E1-8CD3-29BD-AF7D52BF9981}|API-Pdv.csproj|solutionrelative:infraestructure\\repositories\\itempedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F098DA70-50E1-8CD3-29BD-AF7D52BF9981}|API-Pdv.csproj|c:\\users\\joheb\\riderprojects\\api-pdv\\api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F098DA70-50E1-8CD3-29BD-AF7D52BF9981}|API-Pdv.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F098DA70-50E1-8CD3-29BD-AF7D52BF9981}|API-Pdv.csproj|c:\\users\\joheb\\riderprojects\\api-pdv\\api\\controller\\v1\\pedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F098DA70-50E1-8CD3-29BD-AF7D52BF9981}|API-Pdv.csproj|solutionrelative:controller\\v1\\pedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F098DA70-50E1-8CD3-29BD-AF7D52BF9981}|API-Pdv.csproj|c:\\users\\joheb\\riderprojects\\api-pdv\\api\\infraestructure\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F098DA70-50E1-8CD3-29BD-AF7D52BF9981}|API-Pdv.csproj|solutionrelative:infraestructure\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F098DA70-50E1-8CD3-29BD-AF7D52BF9981}|API-Pdv.csproj|c:\\users\\joheb\\riderprojects\\api-pdv\\api\\controller\\v1\\pagamentocaixa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F098DA70-50E1-8CD3-29BD-AF7D52BF9981}|API-Pdv.csproj|solutionrelative:controller\\v1\\pagamentocaixa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F098DA70-50E1-8CD3-29BD-AF7D52BF9981}|API-Pdv.csproj|c:\\users\\joheb\\riderprojects\\api-pdv\\api\\interfaces\\repositories\\iempresa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F098DA70-50E1-8CD3-29BD-AF7D52BF9981}|API-Pdv.csproj|solutionrelative:interfaces\\repositories\\iempresa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F098DA70-50E1-8CD3-29BD-AF7D52BF9981}|API-Pdv.csproj|c:\\users\\joheb\\riderprojects\\api-pdv\\api\\controller\\v1\\motoboy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F098DA70-50E1-8CD3-29BD-AF7D52BF9981}|API-Pdv.csproj|solutionrelative:controller\\v1\\motoboy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F098DA70-50E1-8CD3-29BD-AF7D52BF9981}|API-Pdv.csproj|c:\\users\\joheb\\riderprojects\\api-pdv\\api\\interfaces\\services\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F098DA70-50E1-8CD3-29BD-AF7D52BF9981}|API-Pdv.csproj|solutionrelative:interfaces\\services\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F098DA70-50E1-8CD3-29BD-AF7D52BF9981}|API-Pdv.csproj|c:\\users\\joheb\\riderprojects\\api-pdv\\api\\controller\\v1\\caixa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F098DA70-50E1-8CD3-29BD-AF7D52BF9981}|API-Pdv.csproj|solutionrelative:controller\\v1\\caixa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F098DA70-50E1-8CD3-29BD-AF7D52BF9981}|API-Pdv.csproj|c:\\users\\joheb\\riderprojects\\api-pdv\\api\\infraestructure\\repositories\\caixa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F098DA70-50E1-8CD3-29BD-AF7D52BF9981}|API-Pdv.csproj|solutionrelative:infraestructure\\repositories\\caixa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F098DA70-50E1-8CD3-29BD-AF7D52BF9981}|API-Pdv.csproj|c:\\users\\joheb\\riderprojects\\api-pdv\\api\\infraestructure\\repositories\\pedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F098DA70-50E1-8CD3-29BD-AF7D52BF9981}|API-Pdv.csproj|solutionrelative:infraestructure\\repositories\\pedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F098DA70-50E1-8CD3-29BD-AF7D52BF9981}|API-Pdv.csproj|c:\\users\\joheb\\riderprojects\\api-pdv\\api\\infraestructure\\repositories\\pagamentocaixa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F098DA70-50E1-8CD3-29BD-AF7D52BF9981}|API-Pdv.csproj|solutionrelative:infraestructure\\repositories\\pagamentocaixa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F098DA70-50E1-8CD3-29BD-AF7D52BF9981}|API-Pdv.csproj|c:\\users\\joheb\\riderprojects\\api-pdv\\api\\infraestructure\\repositories\\empresa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F098DA70-50E1-8CD3-29BD-AF7D52BF9981}|API-Pdv.csproj|solutionrelative:infraestructure\\repositories\\empresa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F098DA70-50E1-8CD3-29BD-AF7D52BF9981}|API-Pdv.csproj|c:\\users\\joheb\\riderprojects\\api-pdv\\api\\infraestructure\\repositories\\motoboy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F098DA70-50E1-8CD3-29BD-AF7D52BF9981}|API-Pdv.csproj|solutionrelative:infraestructure\\repositories\\motoboy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F098DA70-50E1-8CD3-29BD-AF7D52BF9981}|API-Pdv.csproj|c:\\users\\joheb\\riderprojects\\api-pdv\\api\\controller\\v1\\empresa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F098DA70-50E1-8CD3-29BD-AF7D52BF9981}|API-Pdv.csproj|solutionrelative:controller\\v1\\empresa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -79,197 +43,93 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ItemPedido.cs",
-              "DocumentMoniker": "C:\\Users\\joheb\\RiderProjects\\API-Pdv\\API\\Controller\\V1\\ItemPedido.cs",
-              "RelativeDocumentMoniker": "Controller\\V1\\ItemPedido.cs",
-              "ToolTip": "C:\\Users\\joheb\\RiderProjects\\API-Pdv\\API\\Controller\\V1\\ItemPedido.cs",
-              "RelativeToolTip": "Controller\\V1\\ItemPedido.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAgwBAAAAAFAAAAAAAAAA==",
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\joheb\\RiderProjects\\API-Pdv\\API\\Infraestructure\\Repositories\\Usuario.cs",
+              "RelativeDocumentMoniker": "Infraestructure\\Repositories\\Usuario.cs",
+              "ToolTip": "C:\\Users\\joheb\\RiderProjects\\API-Pdv\\API\\Infraestructure\\Repositories\\Usuario.cs",
+              "RelativeToolTip": "Infraestructure\\Repositories\\Usuario.cs",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAEwE0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-06T16:48:31.315Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Produto.cs",
-              "DocumentMoniker": "C:\\Users\\joheb\\RiderProjects\\API-Pdv\\API\\Controller\\V1\\Produto.cs",
-              "RelativeDocumentMoniker": "Controller\\V1\\Produto.cs",
-              "ToolTip": "C:\\Users\\joheb\\RiderProjects\\API-Pdv\\API\\Controller\\V1\\Produto.cs",
-              "RelativeToolTip": "Controller\\V1\\Produto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-04T01:11:22.397Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\Users\\joheb\\RiderProjects\\API-Pdv\\API\\Controller\\V1\\AuthController.cs",
-              "RelativeDocumentMoniker": "Controller\\V1\\AuthController.cs",
-              "ToolTip": "C:\\Users\\joheb\\RiderProjects\\API-Pdv\\API\\Controller\\V1\\AuthController.cs",
-              "RelativeToolTip": "Controller\\V1\\AuthController.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAgwBsAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-29T22:57:03.691Z",
+              "WhenOpened": "2025-07-07T00:01:20.734Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "Usuario.cs",
-              "DocumentMoniker": "C:\\Users\\joheb\\RiderProjects\\API-Pdv\\API\\Controller\\V1\\Usuario.cs",
-              "RelativeDocumentMoniker": "Controller\\V1\\Usuario.cs",
-              "ToolTip": "C:\\Users\\joheb\\RiderProjects\\API-Pdv\\API\\Controller\\V1\\Usuario.cs",
-              "RelativeToolTip": "Controller\\V1\\Usuario.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Title": "IEmpresa.cs",
+              "DocumentMoniker": "C:\\Users\\joheb\\RiderProjects\\API-Pdv\\API\\Interfaces\\Repositories\\IEmpresa.cs",
+              "RelativeDocumentMoniker": "Interfaces\\Repositories\\IEmpresa.cs",
+              "ToolTip": "C:\\Users\\joheb\\RiderProjects\\API-Pdv\\API\\Interfaces\\Repositories\\IEmpresa.cs",
+              "RelativeToolTip": "Interfaces\\Repositories\\IEmpresa.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-29T22:56:58.69Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AuthService.cs",
-              "DocumentMoniker": "C:\\Users\\joheb\\RiderProjects\\API-Pdv\\API\\Infraestructure\\Services\\AuthService.cs",
-              "RelativeDocumentMoniker": "Infraestructure\\Services\\AuthService.cs",
-              "ToolTip": "C:\\Users\\joheb\\RiderProjects\\API-Pdv\\API\\Infraestructure\\Services\\AuthService.cs",
-              "RelativeToolTip": "Infraestructure\\Services\\AuthService.cs",
-              "ViewState": "AgIAADUAAAAAAAAAAAAEwF0AAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-29T22:22:35.459Z",
+              "WhenOpened": "2025-07-06T23:30:25.461Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Pedido.cs",
-              "DocumentMoniker": "C:\\Users\\joheb\\RiderProjects\\API-Pdv\\API\\Controller\\V1\\Pedido.cs",
-              "RelativeDocumentMoniker": "Controller\\V1\\Pedido.cs",
-              "ToolTip": "C:\\Users\\joheb\\RiderProjects\\API-Pdv\\API\\Controller\\V1\\Pedido.cs",
-              "RelativeToolTip": "Controller\\V1\\Pedido.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAfAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "IAuthService.cs",
+              "DocumentMoniker": "C:\\Users\\joheb\\RiderProjects\\API-Pdv\\API\\Interfaces\\Services\\IAuthService.cs",
+              "RelativeDocumentMoniker": "Interfaces\\Services\\IAuthService.cs",
+              "ToolTip": "C:\\Users\\joheb\\RiderProjects\\API-Pdv\\API\\Interfaces\\Services\\IAuthService.cs",
+              "RelativeToolTip": "Interfaces\\Services\\IAuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-29T03:49:00.643Z"
+              "WhenOpened": "2025-07-06T23:30:21.591Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "PagamentoCaixa.cs",
-              "DocumentMoniker": "C:\\Users\\joheb\\RiderProjects\\API-Pdv\\API\\Controller\\V1\\PagamentoCaixa.cs",
-              "RelativeDocumentMoniker": "Controller\\V1\\PagamentoCaixa.cs",
-              "ToolTip": "C:\\Users\\joheb\\RiderProjects\\API-Pdv\\API\\Controller\\V1\\PagamentoCaixa.cs",
-              "RelativeToolTip": "Controller\\V1\\PagamentoCaixa.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-29T03:48:51.935Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Motoboy.cs",
-              "DocumentMoniker": "C:\\Users\\joheb\\RiderProjects\\API-Pdv\\API\\Controller\\V1\\Motoboy.cs",
-              "RelativeDocumentMoniker": "Controller\\V1\\Motoboy.cs",
-              "ToolTip": "C:\\Users\\joheb\\RiderProjects\\API-Pdv\\API\\Controller\\V1\\Motoboy.cs",
-              "RelativeToolTip": "Controller\\V1\\Motoboy.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-29T03:48:42.7Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Caixa.cs",
-              "DocumentMoniker": "C:\\Users\\joheb\\RiderProjects\\API-Pdv\\API\\Controller\\V1\\Caixa.cs",
-              "RelativeDocumentMoniker": "Controller\\V1\\Caixa.cs",
-              "ToolTip": "C:\\Users\\joheb\\RiderProjects\\API-Pdv\\API\\Controller\\V1\\Caixa.cs",
-              "RelativeToolTip": "Controller\\V1\\Caixa.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-29T03:48:26.756Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\joheb\\RiderProjects\\API-Pdv\\API\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\joheb\\RiderProjects\\API-Pdv\\API\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAADwAAAAAAAAAAAAQwBAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAAGgAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-29T03:47:20.192Z"
+              "WhenOpened": "2025-07-06T23:25:48.849Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Pedido.cs",
-              "DocumentMoniker": "C:\\Users\\joheb\\RiderProjects\\API-Pdv\\API\\Infraestructure\\Repositories\\Pedido.cs",
-              "RelativeDocumentMoniker": "Infraestructure\\Repositories\\Pedido.cs",
-              "ToolTip": "C:\\Users\\joheb\\RiderProjects\\API-Pdv\\API\\Infraestructure\\Repositories\\Pedido.cs",
-              "RelativeToolTip": "Infraestructure\\Repositories\\Pedido.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAkAAAAWAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\joheb\\RiderProjects\\API-Pdv\\API\\Infraestructure\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "Infraestructure\\Services\\AuthService.cs",
+              "ToolTip": "C:\\Users\\joheb\\RiderProjects\\API-Pdv\\API\\Infraestructure\\Services\\AuthService.cs",
+              "RelativeToolTip": "Infraestructure\\Services\\AuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-29T03:45:42.451Z"
+              "WhenOpened": "2025-07-06T23:19:10.079Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "PagamentoCaixa.cs",
-              "DocumentMoniker": "C:\\Users\\joheb\\RiderProjects\\API-Pdv\\API\\Infraestructure\\Repositories\\PagamentoCaixa.cs",
-              "RelativeDocumentMoniker": "Infraestructure\\Repositories\\PagamentoCaixa.cs",
-              "ToolTip": "C:\\Users\\joheb\\RiderProjects\\API-Pdv\\API\\Infraestructure\\Repositories\\PagamentoCaixa.cs",
-              "RelativeToolTip": "Infraestructure\\Repositories\\PagamentoCaixa.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAnAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "Produto.cs",
+              "DocumentMoniker": "C:\\Users\\joheb\\RiderProjects\\API-Pdv\\API\\Controller\\V1\\Produto.cs",
+              "RelativeDocumentMoniker": "Controller\\V1\\Produto.cs",
+              "ToolTip": "C:\\Users\\joheb\\RiderProjects\\API-Pdv\\API\\Controller\\V1\\Produto.cs",
+              "RelativeToolTip": "Controller\\V1\\Produto.cs",
+              "ViewState": "AgIAALcAAAAAAAAAAAAkwCYAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-29T03:45:41.578Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Motoboy.cs",
-              "DocumentMoniker": "C:\\Users\\joheb\\RiderProjects\\API-Pdv\\API\\Infraestructure\\Repositories\\Motoboy.cs",
-              "RelativeDocumentMoniker": "Infraestructure\\Repositories\\Motoboy.cs",
-              "ToolTip": "C:\\Users\\joheb\\RiderProjects\\API-Pdv\\API\\Infraestructure\\Repositories\\Motoboy.cs",
-              "RelativeToolTip": "Infraestructure\\Repositories\\Motoboy.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-29T03:45:40.684Z"
+              "WhenOpened": "2025-07-06T22:17:26.769Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "ItemPedido.cs",
-              "DocumentMoniker": "C:\\Users\\joheb\\RiderProjects\\API-Pdv\\API\\Infraestructure\\Repositories\\ItemPedido.cs",
-              "RelativeDocumentMoniker": "Infraestructure\\Repositories\\ItemPedido.cs",
-              "ToolTip": "C:\\Users\\joheb\\RiderProjects\\API-Pdv\\API\\Infraestructure\\Repositories\\ItemPedido.cs",
-              "RelativeToolTip": "Infraestructure\\Repositories\\ItemPedido.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-29T03:45:39.866Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
               "Title": "Empresa.cs",
-              "DocumentMoniker": "C:\\Users\\joheb\\RiderProjects\\API-Pdv\\API\\Infraestructure\\Repositories\\Empresa.cs",
-              "RelativeDocumentMoniker": "Infraestructure\\Repositories\\Empresa.cs",
-              "ToolTip": "C:\\Users\\joheb\\RiderProjects\\API-Pdv\\API\\Infraestructure\\Repositories\\Empresa.cs",
-              "RelativeToolTip": "Infraestructure\\Repositories\\Empresa.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAApAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\joheb\\RiderProjects\\API-Pdv\\API\\Controller\\V1\\Empresa.cs",
+              "RelativeDocumentMoniker": "Controller\\V1\\Empresa.cs",
+              "ToolTip": "C:\\Users\\joheb\\RiderProjects\\API-Pdv\\API\\Controller\\V1\\Empresa.cs",
+              "RelativeToolTip": "Controller\\V1\\Empresa.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAAIwEcAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-29T03:45:38.964Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Caixa.cs",
-              "DocumentMoniker": "C:\\Users\\joheb\\RiderProjects\\API-Pdv\\API\\Infraestructure\\Repositories\\Caixa.cs",
-              "RelativeDocumentMoniker": "Infraestructure\\Repositories\\Caixa.cs",
-              "ToolTip": "C:\\Users\\joheb\\RiderProjects\\API-Pdv\\API\\Infraestructure\\Repositories\\Caixa.cs",
-              "RelativeToolTip": "Infraestructure\\Repositories\\Caixa.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-29T03:45:37.968Z"
+              "WhenOpened": "2025-07-06T21:35:00.505Z",
+              "EditorCaption": ""
             }
           ]
         }

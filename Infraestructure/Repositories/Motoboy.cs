@@ -24,6 +24,14 @@ public class MotoboyRepository : IMotoboy
         return await _context.Set<MotoBoyEntity>().ToListAsync();
     }
 
+    public async Task<IEnumerable<MotoBoyEntity>> GetByEmpresaAsync(int empresaId)
+    {
+        return await _context.Set<MotoBoyEntity>()
+            .Where(m => m.EmpresaId == empresaId)
+            .OrderBy(m => m.Nome)
+            .ToListAsync();
+    }
+
     public async Task<MotoBoyEntity> CreateAsync(MotoBoyEntity motoboy)
     {
         _context.Set<MotoBoyEntity>().Add(motoboy);

@@ -1,4 +1,5 @@
 using API_Pdv.Interfaces.Repositories;
+using API_Pdv.Utils;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using CategoriaEntities = API_Pdv.Entities.Categoria;
@@ -17,11 +18,28 @@ namespace WebPdv.Controllers
             _categoriaRepository = categoriaRepository;
         }
 
+        // Development endpoint - no authentication required
+        [HttpGet("dev/all")]
+        [AllowAnonymous]
+        public async Task<IActionResult> GetAllDev()
+        {
+            try
+            {
+                var categorias = await _categoriaRepository.GetAllAsync();
+                return Ok(categorias);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Erro interno do servidor: {ex.Message}");
+            }
+        }
+
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
             try
             {
+                // Categorias são globais, não filtramos por empresa
                 var categorias = await _categoriaRepository.GetAllAsync();
                 return Ok(categorias);
             }

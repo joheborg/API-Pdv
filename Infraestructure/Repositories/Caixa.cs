@@ -25,6 +25,15 @@ public class Caixa : ICaixa
         return await _context.Set<CaixaEntity>().ToListAsync();
     }
 
+    public async Task<IEnumerable<CaixaEntity>> GetByEmpresaAsync(int empresaId)
+    {
+        return await _context.Set<CaixaEntity>()
+            .Include(c => c.Empresa)
+            .Where(c => c.EmpresaId == empresaId)
+            .OrderByDescending(c => c.DataAbertura)
+            .ToListAsync();
+    }
+
     public async Task<CaixaEntity> CreateAsync(CaixaEntity caixa)
     {
         _context.Set<CaixaEntity>().Add(caixa);

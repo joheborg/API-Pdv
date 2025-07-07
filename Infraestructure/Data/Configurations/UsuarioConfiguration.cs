@@ -19,17 +19,11 @@ public class UsuarioConfiguration : IEntityTypeConfiguration<Usuario>
         builder.Property(u => u.Perfil).HasMaxLength(20);
         builder.Property(u => u.Ativo).IsRequired();
         builder.Property(u => u.UltimoAcesso);
-        builder.Property(u => u.FuncionarioId);
         builder.Property(u => u.EmpresaId);
         builder.Property(u => u.CreatedAt).IsRequired();
         builder.Property(u => u.UpdatedAt).IsRequired();
 
         // Relacionamentos
-        builder.HasOne(u => u.Funcionario)
-            .WithMany()
-            .HasForeignKey(u => u.FuncionarioId)
-            .OnDelete(DeleteBehavior.SetNull);
-
         builder.HasOne(u => u.Empresa)
             .WithMany()
             .HasForeignKey(u => u.EmpresaId)

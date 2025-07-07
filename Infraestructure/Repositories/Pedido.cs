@@ -26,6 +26,18 @@ public class Pedido : IPedido
         return await _context.Set<PedidoEntity>().ToListAsync();
     }
 
+    public async Task<IEnumerable<PedidoEntity>> GetByEmpresaAsync(int empresaId)
+    {
+        return await _context.Set<PedidoEntity>()
+            .Include(p => p.ItensPedido)
+            .ThenInclude(i => i.Produto)
+            .Include(p => p.Situacao)
+            .Include(p => p.Empresa)
+            .Where(p => p.EmpresaId == empresaId)
+            .OrderByDescending(p => p.DataPedido)
+            .ToListAsync();
+    }
+
     public async Task<PedidoEntity> CreateAsync(PedidoEntity pedido)
     {
         _context.Set<PedidoEntity>().Add(pedido);

@@ -7,6 +7,7 @@ public interface IMotoboy
 {
     Task<MotoBoyEntity> GetByIdAsync(int id);
     Task<IEnumerable<MotoBoyEntity>> GetAllAsync();
+    Task<IEnumerable<MotoBoyEntity>> GetByEmpresaAsync(int empresaId);
     Task<MotoBoyEntity> CreateAsync(MotoBoyEntity motoboy);
     Task<MotoBoyEntity> UpdateAsync(MotoBoyEntity motoboy);
     Task DeleteAsync(int id);

@@ -1,4 +1,5 @@
 using API_Pdv.Interfaces.Repositories;
+using API_Pdv.Utils;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using ProdutoEntities = API_Pdv.Entities.Produto;
@@ -7,7 +8,7 @@ namespace WebPdv.Controllers
 {
     [ApiController]
     [Route("api/v1/[controller]")]
-    [Authorize]
+    //[Authorize]
     public class ProdutoController : ControllerBase
     {
         private readonly IProduto _produtoRepository;
@@ -17,12 +18,36 @@ namespace WebPdv.Controllers
             _produtoRepository = produtoRepository;
         }
 
+        // Development endpoint - no authentication required
+        [HttpGet("dev/all")]
+        [AllowAnonymous]
+        public async Task<IActionResult> GetAllDev()
+        {
+            try
+            {
+                // For development, get all products from the first company
+                var produtos = await _produtoRepository.GetAllAsync();
+                return Ok(produtos);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Erro interno do servidor: {ex.Message}");
+            }
+        }
+
         [HttpGet]
+        [AllowAnonymous]
         public async Task<IActionResult> GetAll()
         {
             try
             {
-                var produtos = await _produtoRepository.GetAllAsync();
+                var empresaId = UserHelper.GetCurrentUserEmpresaId(HttpContext);
+                if (!empresaId.HasValue)
+                {
+                    return BadRequest("Usuário não possui empresa associada");
+                }
+
+                var produtos = await _produtoRepository.GetByEmpresaAsync(empresaId.Value);
                 return Ok(produtos);
             }
             catch (Exception ex)
@@ -62,14 +87,20 @@ namespace WebPdv.Controllers
             }
         }
 
-        [HttpGet("codigo/{empresaId}/{codigoProduto}")]
-        public async Task<IActionResult> GetByCodigo(int empresaId, string codigoProduto)
+        [HttpGet("codigo/{codigoProduto}")]
+        public async Task<IActionResult> GetByCodigo(string codigoProduto)
         {
             try
             {
-                var produto = await _produtoRepository.GetByCodigoAsync(empresaId, codigoProduto);
+                var empresaId = UserHelper.GetCurrentUserEmpresaId(HttpContext);
+                if (!empresaId.HasValue)
+                {
+                    return BadRequest("Usuário não possui empresa associada");
+                }
+
+                var produto = await _produtoRepository.GetByCodigoAsync(empresaId.Value, codigoProduto);
                 if (produto == null)
-                    return NotFound($"Produto com código {codigoProduto} não encontrado na empresa {empresaId}");
+                    return NotFound($"Produto com código {codigoProduto} não encontrado");
                 
                 return Ok(produto);
             }
@@ -135,6 +166,13 @@ namespace WebPdv.Controllers
                 if (!ModelState.IsValid)
                     return BadRequest(ModelState);
 
+                var empresaId = UserHelper.GetCurrentUserEmpresaId(HttpContext);
+                if (!empresaId.HasValue)
+                {
+                    return BadRequest("Usuário não possui empresa associada");
+                }
+
+                produto.EmpresaId = empresaId.Value;
                 var createdProduto = await _produtoRepository.CreateAsync(produto);
                 return CreatedAtAction(nameof(GetById), new { id = createdProduto.Id }, createdProduto);
             }

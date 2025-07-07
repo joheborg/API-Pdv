@@ -9,7 +9,6 @@ using VendaEntities = API_Pdv.Entities.Venda;
 using ItemVendaEntities = API_Pdv.Entities.ItemVenda;
 using TransacaoEntities = API_Pdv.Entities.Transacao;
 using ClienteEntities = API_Pdv.Entities.Cliente;
-using FuncionarioEntities = API_Pdv.Entities.Funcionario;
 using UsuarioEntities = API_Pdv.Entities.Usuario;
 using AtividadeRecenteEntities = API_Pdv.Entities.AtividadeRecente;
 
@@ -29,7 +28,6 @@ public class ApplicationDbContext : DbContext
     public DbSet<ItemVendaEntities> ItensVenda { get; set; }
     public DbSet<TransacaoEntities> Transacoes { get; set; }
     public DbSet<ClienteEntities> Clientes { get; set; }
-    public DbSet<FuncionarioEntities> Funcionarios { get; set; }
     public DbSet<UsuarioEntities> Usuarios { get; set; }
     public DbSet<AtividadeRecenteEntities> AtividadesRecentes { get; set; }
 

@@ -1,4 +1,5 @@
 using API_Pdv.Infraestructure.Repositories;
+using API_Pdv.Utils;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
@@ -19,8 +20,21 @@ public class CaixaController : ControllerBase
     [HttpGet]
     public async Task<IActionResult> GetAll()
     {
-        var caixas = await _caixaRepository.GetAllAsync();
-        return Ok(caixas);
+        try
+        {
+            var empresaId = UserHelper.GetCurrentUserEmpresaId(HttpContext);
+            if (!empresaId.HasValue)
+            {
+                return BadRequest("Usuário não possui empresa associada");
+            }
+
+            var caixas = await _caixaRepository.GetByEmpresaAsync(empresaId.Value);
+            return Ok(caixas);
+        }
+        catch (Exception ex)
+        {
+            return StatusCode(500, $"Erro interno do servidor: {ex.Message}");
+        }
     }
 
     [HttpGet("{id}")]
@@ -35,8 +49,22 @@ public class CaixaController : ControllerBase
     [HttpPost]
     public async Task<IActionResult> Create([FromBody] CaixaEntity caixa)
     {
-        var created = await _caixaRepository.CreateAsync(caixa);
-        return CreatedAtAction(nameof(GetById), new { id = created.Id }, created);
+        try
+        {
+            var empresaId = UserHelper.GetCurrentUserEmpresaId(HttpContext);
+            if (!empresaId.HasValue)
+            {
+                return BadRequest("Usuário não possui empresa associada");
+            }
+
+            caixa.EmpresaId = empresaId.Value;
+            var created = await _caixaRepository.CreateAsync(caixa);
+            return CreatedAtAction(nameof(GetById), new { id = created.Id }, created);
+        }
+        catch (Exception ex)
+        {
+            return StatusCode(500, $"Erro interno do servidor: {ex.Message}");
+        }
     }
 
     [HttpPut("{id}")]

@@ -8,6 +8,7 @@ public interface IPedido
 {
     Task<PedidoEntity> GetByIdAsync(int id);
     Task<IEnumerable<PedidoEntity>> GetAllAsync();
+    Task<IEnumerable<PedidoEntity>> GetByEmpresaAsync(int empresaId);
     Task<PedidoEntity> CreateAsync(PedidoEntity pedido);
     Task<PedidoEntity> UpdateAsync(PedidoEntity pedido);
     Task DeleteAsync(int id);

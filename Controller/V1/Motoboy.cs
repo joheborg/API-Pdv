@@ -1,4 +1,5 @@
 using API_Pdv.Infraestructure.Repositories;
+using API_Pdv.Utils;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
@@ -20,8 +21,21 @@ public class MotoboyController : ControllerBase
     [HttpGet]
     public async Task<IActionResult> GetAll()
     {
-        var motoboys = await _motoboyRepository.GetAllAsync();
-        return Ok(motoboys);
+        try
+        {
+            var empresaId = UserHelper.GetCurrentUserEmpresaId(HttpContext);
+            if (!empresaId.HasValue)
+            {
+                return BadRequest("Usuário não possui empresa associada");
+            }
+
+            var motoboys = await _motoboyRepository.GetByEmpresaAsync(empresaId.Value);
+            return Ok(motoboys);
+        }
+        catch (Exception ex)
+        {
+            return StatusCode(500, $"Erro interno do servidor: {ex.Message}");
+        }
     }
 
     [HttpGet("{id}")]
@@ -36,8 +50,22 @@ public class MotoboyController : ControllerBase
     [HttpPost]
     public async Task<IActionResult> Create([FromBody] MotoBoyEntity motoboy)
     {
-        var created = await _motoboyRepository.CreateAsync(motoboy);
-        return CreatedAtAction(nameof(GetById), new { id = created.Id }, created);
+        try
+        {
+            var empresaId = UserHelper.GetCurrentUserEmpresaId(HttpContext);
+            if (!empresaId.HasValue)
+            {
+                return BadRequest("Usuário não possui empresa associada");
+            }
+
+            motoboy.EmpresaId = empresaId.Value;
+            var created = await _motoboyRepository.CreateAsync(motoboy);
+            return CreatedAtAction(nameof(GetById), new { id = created.Id }, created);
+        }
+        catch (Exception ex)
+        {
+            return StatusCode(500, $"Erro interno do servidor: {ex.Message}");
+        }
     }
 
     [HttpPut("{id}")]
