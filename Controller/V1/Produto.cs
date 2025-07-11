@@ -158,6 +158,27 @@ namespace WebPdv.Controllers
             }
         }
         
+        // Development endpoint - no authentication required
+        [HttpPost("dev/create")]
+        [AllowAnonymous]
+        public async Task<IActionResult> CreateDev([FromBody] ProdutoEntities produto)
+        {
+            try
+            {
+                if (!ModelState.IsValid)
+                    return BadRequest(ModelState);
+
+                // Para desenvolvimento, usar empresa ID 1
+                produto.EmpresaId = 1;
+                var createdProduto = await _produtoRepository.CreateAsync(produto);
+                return CreatedAtAction(nameof(GetById), new { id = createdProduto.Id }, createdProduto);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Erro interno do servidor: {ex.Message}");
+            }
+        }
+
         [HttpPost]
         public async Task<IActionResult> Create([FromBody] ProdutoEntities produto)
         {

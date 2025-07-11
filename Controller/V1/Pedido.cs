@@ -36,6 +36,21 @@ namespace WebPdv.Controllers
             }
         }
 
+        [HttpGet("dev/empresa/{empresaId}")]
+        [AllowAnonymous]
+        public async Task<IActionResult> GetByEmpresaDev(int empresaId)
+        {
+            try
+            {
+                var pedidos = await _pedidoRepository.GetByEmpresaAsync(empresaId);
+                return Ok(pedidos);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Erro interno do servidor: {ex.Message}");
+            }
+        }
+
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
