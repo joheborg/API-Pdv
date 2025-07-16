@@ -11,6 +11,7 @@ using TransacaoEntities = API_Pdv.Entities.Transacao;
 using ClienteEntities = API_Pdv.Entities.Cliente;
 using UsuarioEntities = API_Pdv.Entities.Usuario;
 using AtividadeRecenteEntities = API_Pdv.Entities.AtividadeRecente;
+using AvaliacaoEntities = API_Pdv.Entities.Avaliacao;
 
 namespace API_Pdv.Infraestructure.Data.Context;
 
@@ -30,6 +31,7 @@ public class ApplicationDbContext : DbContext
     public DbSet<ClienteEntities> Clientes { get; set; }
     public DbSet<UsuarioEntities> Usuarios { get; set; }
     public DbSet<AtividadeRecenteEntities> AtividadesRecentes { get; set; }
+    public DbSet<AvaliacaoEntities> Avaliacoes { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {

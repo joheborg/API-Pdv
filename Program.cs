@@ -54,6 +54,7 @@ builder.Services.AddScoped<IAuthService, API_Pdv.Infraestructure.Services.AuthSe
 //builder.Services.AddScoped<IMotoboy, API_Pdv.Infraestructure.Repositories.Motoboy>();
 builder.Services.AddScoped<IPedido, API_Pdv.Infraestructure.Repositories.Pedido>();
 builder.Services.AddScoped<IPagamentoCaixa, API_Pdv.Infraestructure.Repositories.PagamentoCaixa>();
+builder.Services.AddScoped<IAvaliacao, API_Pdv.Infraestructure.Repositories.Avaliacao>();
 
 // Adiciona Swagger
 builder.Services.AddEndpointsApiExplorer();
